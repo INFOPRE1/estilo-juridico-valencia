@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Estilo Jurídico Valencia</title>
+    <id>http://www.zotero.org/styles/estilo-juridico-valencia</id>
+    <link href="http://www.zotero.org/styles/estilo-juridico-valencia" rel="self"/>
+    <author>
+      <name>Adaptado para UV</name>
+    </author>
+    <category citation-format="note"/>
+    <summary>Estilo de citas para estudios jurídicos según pautas de la Universidad de Valencia.</summary>
+    <updated>2025-06-18T00:00:00+00:00</updated>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name form="long" name-as-sort-order="all" delimiter=", " initialize-with="."/>
+    </names>
+  </macro>
+  <macro name="title">
+    <text variable="title" font-style="italic"/>
+  </macro>
+  <macro name="publisher">
+    <group delimiter=", ">
+      <text variable="publisher"/>
+      <text variable="publisher-place"/>
+      <text variable="edition" suffix=" ed."/>
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+    </group>
+  </macro>
+  <citation>
+    <layout prefix="" suffix="" delimiter=". ">
+      <text macro="author" suffix=": "/>
+      <text macro="title" suffix=". "/>
+      <text macro="publisher"/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout hanging-indent="true" delimiter=". ">
+      <text macro="author" suffix=": "/>
+      <text macro="title" suffix=". "/>
+      <text macro="publisher"/>
+    </layout>
+  </bibliography>
+</style>
